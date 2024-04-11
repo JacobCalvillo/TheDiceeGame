@@ -1,0 +1,51 @@
+html {
+  font-family: "Montserrat", sans-serif;
+  background: #b993d6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8ca6db, #b993d6);
+  background: linear-gradient(to right, #8ca6db, #b993d6);
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+}
+
+.title {
+  font-size: 8rem;
+  text-align: center;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.player {
+  margin: 2rem;
+}
+
+.button {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #3d348b;
+  box-shadow: 0 5px #2c0b8e;
+}
+.button:hover {
+  box-shadow: 0 3px #2c0b8e;
+  top: 1px;
+}
+.button:active {
+  box-shadow: 0 0 #2c0b8e;
+  top: 5px;
+}
