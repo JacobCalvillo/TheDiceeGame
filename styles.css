@@ -12,18 +12,21 @@ html {
 }
 
 .title {
-  font-size: 8rem;
-  text-align: center;
+  font-size: 6rem; /* Reducir el tamaño del título */
+  margin-bottom: 2rem; /* Agregar un margen inferior */
 }
 
 .divider {
   display: flex;
   justify-content: center;
   align-items: center; 
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas más pequeñas */
 }
 
 .player {
   margin: 2rem;
+  flex: 1 0 200px; /* Ajustar el tamaño de los elementos del jugador */
+  max-width: 200px; /* Limitar el ancho máximo */
 }
 
 .button {
@@ -56,12 +59,11 @@ html {
 /* Reglas de medios para dispositivos más pequeños */
 @media screen and (max-width: 768px) {
   .title {
-    font-size: 6rem;
+    font-size: 4rem; /* Hacer que el título sea aún más pequeño en pantallas más pequeñas */
   }
 
-  .divider {
-    display: flex;
-    flex-direction: column; /* Cambiado de center a column para una mejor respuesta */
-    align-items: center; /* Centrar los elementos horizontalmente */  
+  .player {
+    flex: 1 0 100%; /* Ajustar el tamaño de los elementos del jugador para ocupar todo el ancho disponible */
+    max-width: none; /* Eliminar el límite máximo de ancho */
   }
 }
