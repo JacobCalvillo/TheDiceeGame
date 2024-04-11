@@ -1,6 +1,7 @@
+/* Estilos generales */
 html {
   font-family: "Montserrat", sans-serif;
-  background: #b993d6; /* fallback for old browsers */
+  background: #b993d6; /* fallback para navegadores antiguos */
   background: -webkit-linear-gradient(to right, #8ca6db, #b993d6);
   background: linear-gradient(to right, #8ca6db, #b993d6);
   color: #fff;
@@ -18,7 +19,7 @@ html {
 .divider {
   display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center; 
 }
 
 .player {
@@ -41,11 +42,26 @@ html {
   background: #3d348b;
   box-shadow: 0 5px #2c0b8e;
 }
+
 .button:hover {
   box-shadow: 0 3px #2c0b8e;
   top: 1px;
 }
+
 .button:active {
   box-shadow: 0 0 #2c0b8e;
   top: 5px;
+}
+
+/* Reglas de medios para dispositivos más pequeños */
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 6rem;
+  }
+
+  .divider {
+    display: flex;
+    flex-direction: column; /* Cambiado de center a column para una mejor respuesta */
+    align-items: center; /* Centrar los elementos horizontalmente */  
+  }
 }
